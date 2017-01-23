@@ -1,0 +1,45 @@
+#cloth{
+    position: relative;
+    height: 80vh;
+    margin: 10vh auto;
+    width: 80vh;
+    background-color: red;
+    overflow: hidden;
+}
+
+.animate-block,.change-color{
+    position: absolute;
+}
+
+.animate-block{
+    width: 240vh;
+    height: 240vh;
+    background-color: transparent;
+}
+
+.change-color{
+    top: 50%;
+    left: 50%;
+    width: 1px;
+    height: 1px;
+    border-radius: 50%;
+
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform:translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    -webkit-transition-property: width,height;
+    -moz-transition-property: width,height;
+    -o-transition-property: width,height;
+    transition-property: width,height;
+
+    -webkit-transition-duration: 2s;
+    -moz-transition-duration: 2s;
+    -o-transition-duration: 2s;
+    transition-duration: 2s;
+}
+
+
+
